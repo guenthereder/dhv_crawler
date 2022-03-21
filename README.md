@@ -16,7 +16,7 @@ create a config file named conf.py with the following content
 
 simply call
 
-./dhv_crawler.py 'item i am looking for'
+    ./dhv_crawler.py 'item i am looking for'
 
 Result will be either: 'item ...' not found or an email will be sent using the given mail settings containing deteil about the discovered items.
 
