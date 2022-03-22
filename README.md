@@ -1,6 +1,6 @@
 # dhv_crawler
 
-simplify periodically checking for an item on the dhv marketplace 
+check for an item in the [DHV Marketplace](https://www.dhv.de/db3/gebrauchtmarkt/anzeigen/) and get an email with the found items.
 
 ## usage
 
@@ -18,8 +18,8 @@ simply call
 
     ./dhv_crawler.py 'item i am looking for'
 
-Result will be either: 'item ...' not found or an email will be sent using the given mail settings containing deteil about the discovered items.
+result will be either: 'item ...' not found or an email will be sent using the given mail settings containing deteil about the discovered items.
 
 ## automation
 
-Simply use crontab for automation
+simply use crontab for automation
