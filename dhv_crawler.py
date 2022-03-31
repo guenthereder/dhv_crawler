@@ -110,8 +110,9 @@ if __name__ == '__main__':
 
                 message_post += item_text
 
-            subject = f"CRAWLER {args.item} found {idx} times \n\n"
-            send_email(subject, message_post)
+            if idx > 0:
+                subject = f"CRAWLER {args.item} found {idx} times \n\n"
+                send_email(subject, message_post)
         else:
             print(f"{args.item} not found.")
     else:
