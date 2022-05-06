@@ -100,13 +100,13 @@ if __name__ == '__main__':
                 title = item.find('a', class_='dtl').get_text()
                 if 'suche' in title.lower() or 'looking' in title.lower(): continue
                 idx += 1
-                item_text = f"{idx} {title}\n"
-                item_text += f"{item.find(class_='gm_price').get_text()} {item.find(class_='gm_price_type').get_text()}\n"  
-                item_text += f"https://www.dhv.de{item.find('a', class_='gm_offer_btn dtl')['href']}\n"  
+                item_text = f"{idx} {title}\r\n"
+                item_text += f"{item.find(class_='gm_price').get_text()} {item.find(class_='gm_price_type').get_text()}\r\n"  
+                item_text += f"https://www.dhv.de{item.find('a', class_='gm_offer_btn dtl')['href']}\r\n"  
                 item_desc = item.find(class_='gm_offer_description').get_text()
                 item_desc = re.sub(r'^$\n', '', item_desc, flags=re.MULTILINE).replace('\n','') 
                 item_text += " ".join(item_desc.split())
-                item_text += "\n\n"
+                item_text += "\r\n \r\n"
 
                 message_post += item_text
 
